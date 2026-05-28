@@ -1,4 +1,4 @@
-module DataMemory (
+module Data_Memory (
 
     input wire clk,
     input wire WE,
