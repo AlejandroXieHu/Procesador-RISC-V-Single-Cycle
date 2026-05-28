@@ -1,4 +1,4 @@
-module ProgramCounter (
+module Program_Counter (
 
     input clk,
     input rst,
