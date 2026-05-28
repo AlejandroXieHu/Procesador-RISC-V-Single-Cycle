@@ -1,4 +1,4 @@
-module ALUControl (
+module ALU_Control (
 
     input [1:0] ALUOp,
     input [2:0] funct3,
