@@ -11,27 +11,18 @@ module RegisterFile (
 
 );
 
-    reg [31:0] rf [31:0];
+    reg [31:0] REG [31:0];
 
     always @(posedge clk)
         begin
-            if (WE3 && (A3 != 5'b0))
-                begin
-                    rf[A3] <= WD3;
-                end
+            RD1 = REG[A1];
+            RD2 = REG[A2];
         end
 
     always @(*)
         begin
-            if (A1 == 5'b0)
-                RD1 = 32'b0;
-            else
-                RD1 = rf[A1];
-
-            if (A2 == 5'b0)
-                RD2 = 32'b0;
-            else
-                RD2 = rf[A2];
+            if (WE3 == 1)
+                REG[A3] = WD3;
         end
 
 endmodule
