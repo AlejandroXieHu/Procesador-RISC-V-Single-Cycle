@@ -1,4 +1,4 @@
-module Mux (
+module Multiplexor (
 
     input wire [31:0] d0,
     input wire [31:0] d1,
