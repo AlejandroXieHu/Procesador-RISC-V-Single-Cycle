@@ -3,7 +3,7 @@ module ProgramCounter (
     input clk,
     input rst,
     input [31:0] pc_next,
-    output reg [31:0] pc
+    output reg [31:2] pc
 
 );
 
