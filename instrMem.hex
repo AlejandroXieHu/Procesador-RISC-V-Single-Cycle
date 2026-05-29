@@ -1,0 +1,11 @@
+// 00500293
+// 00a00313
+// 00628533 
+
+// Test program con instrucciones básicas
+00500293   // addi x5, x0, 5    (Carga/Inmediato: x5 = 5)
+00a00313   // addi x6, x0, 10   (Carga/Inmediato: x6 = 10)
+00628533   // add x10, x5, x6   (Suma: x10 = 5 + 10 = 15)
+406285b3   // sub x11, x5, x6   (Resta: x11 = 5 - 10 = -5)
+00528463   // beq x5, x5, 8     (Salto: Si x5 == x5, salta 2 instrucciones hacia adelante)
+00000000   // nop               (Instrucción vacía para evitar basura al final)
